@@ -36,6 +36,19 @@ models:
     example:
       +materialized: view
 
+    stage:
+      +materialized: view
+      +schema: stage
+
+      erp:
+        +materialized: view
+
+    marts:
+      +materialized: table
+      +schema: marts
+
+      intermediate:
+        +materialized: view
 
 
 seeds:
